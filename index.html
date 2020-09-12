@@ -1,61 +1,81 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
+	<meta charset="UTF-8">
 	<title>Code Review 1</title>
+
+<!--An external stylesheet is used to be able to apply the styling to the other pages of the website-->
+
+	<link rel='stylesheet' type="text/css" href='style.css'>
+
 </head>
 <body>
 
-<div class='container'>
+<!--Setting up the html structure, semantic elements are used for better readability-->
+
+<div id='container'>
 
 <header>
-	<div>
+
+	<div class='header_title'>
 		<h2>
 			Mark - Full-Stack Web Developer
 		</h2>
 	</div>
-	<div>
-		<figure>
-			<img src="img/logo.png" alt="Code Factory Logo">
-		</figure>
+
+	<div class='header_logo'>
+		<img id="logo_header" src="img/logo.png" alt="Code Factory Logo">
 	</div>
+
 </header>
 
 <nav>
 	<ul>
-		<li><a href="" title="">Home</a></li>
-		<li><a href="" title="">Blog</a></li>
-		<li><a href="" title="">About me</a></li>		
-		<li><a href="" title="">Contact</a></li>
+		<li><a href="index.html" title="Home">Home</a></li>
+		<li><a href="blog.html" title="Blog">Blog</a></li>
+		<li><a href="about_me.html" title="About me">About me</a></li>		
+		<li><a href="contact.html" title="Contact">Contact</a></li>
 	</ul>
 </nav>
 
 <main>
+
 	<div>
-		<h1>This is my first website :D</h1>
+		<h1>This is my first <br> website :D</h1>
 	</div>
-	<section>
-		<article>
-			<figure>
-				<img src="img/Phone.png" alt="Phone stock image">
-				<figcaption>The Samsung Galaxy S11/S20 Plus video leaks showing phone in real life!</figcaption>
-			</figure>
+
+<!--Each row of articles is grouped into a section. The Article element for the first row is not needed but kept for consitency and easy expandability-->
+
+	<section class='top_section'>
+
+		<article class='first_article'>
+			<img id="phone" src="img/Phone.png" alt="Phone stock image" width="1000em" height="400em">
+			<h3>The Samsung Galaxy S11/S20 Plus video leaks showing phone in real life!</h3>
 		</article>
-		<article>
-				<img src="img/Debit_card_ATM.jpg" alt="ATM stock image">
-				<figcaption>Polica are investigating three ATM explosions in two Florida counties</figcaption>
-		</article>
-		<article>
-				<img src="img/Taxify-Scooters.jpg" alt="Bolt stock image">
-				<figcaption>E-scooter firm Bolt pulls out of 12 cities</figcaption>
-		</article>	
+
 	</section>
+
+	<section class='bottom_section'>
+
+		<article class='first_article'>
+			<img id="ATM" src="img/Debit_card_ATM.jpg" alt="ATM stock image">
+			<h3>Polica are investigating three ATM explosions in two Florida counties</h3>
+		</article>
+
+		<article class='second_article'>
+			<img id="Bolt" src="img/Taxify-Scooters.jpg" alt="Bolt stock image">
+			<h3>E-scooter firm Bolt pulls out of 12 cities</h3>
+		</article>
+
+	</section>
+
 </main>
 
 <footer>
-	<figure>
-		<img src="img/logo.png" alt="Code Factory Logo">
-	</figure>
-	Mark CodeFactory2020
+	<img id="logo_footer" src="img/logo.png" alt="Code Factory Logo">
+	<br>
+	<br>
+	<p>Mark CodeFactory2020</p>
 </footer>
 
 </div>
