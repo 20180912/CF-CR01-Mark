@@ -14,6 +14,10 @@
         margin: 1em;
         }
 
+    #placeholder {
+        margin-left: 30%;
+    }
+
 /*Unsetting the default formatting for links, otherwise output depens on the browser*/
 
 	a {
